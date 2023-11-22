@@ -26,8 +26,16 @@ int bitmove()
     return 0;
 }
 
+void print()
+{
+    char a = 'H';
+    std::bitset<8> x(a);
+    std::cout << x << " " << a << " " << static_cast<int>(a) << "\n";
+}
+
 int main()
 {
+    print();
     std::bitset<8> me{ 0b0000'0101 }; // we need 8 bits, start with bit pattern 0000 0101
     me.set(3);   // set bit position 3 to 1 (now we have 0000 1101)
     me.flip(4);  // flip bit 4 (now we have 0001 1101)
@@ -40,7 +48,7 @@ int main()
     BitCheck();
     bitmove();
 
-    std::cout << (std::bitset<4>{ 0b0101 } | std::bitset<4>{ 0b0110 }) << '\n';
+    std::cout << "\n" << (std::bitset<4>{ 0b0101 } | std::bitset<4>{ 0b0110 }) << '\n';
     std::cout << (std::bitset<4>{ 0b0111 } | std::bitset<4>{ 0b0011 } | std::bitset<4>{ 0b0001 }) << '\n';
 
     std::cout << (std::bitset<4>{ 0b0101 } & std::bitset<4>{ 0b0110 }) << '\n'; 
