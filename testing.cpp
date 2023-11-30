@@ -28,3 +28,10 @@ int main() {
     return 0;
 }
 
+// int main()
+// {
+//     int array[10000000]; // allocate 1 million integers (probably 4MB of memory)
+//     cout << 1000; 
+//     return 0;
+// }
+
