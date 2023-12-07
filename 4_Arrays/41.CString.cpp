@@ -1,5 +1,6 @@
 #include <cstring> // for std::strlen
 #include <iostream>
+#include <string> 
 
 int main()
 {
@@ -9,5 +10,6 @@ int main()
     char *ptr { str };
     std::cout << "length = " << std::strlen(ptr) << '\n';   // prints length = 6
 
+    std::cout << std::string{"HELLO THERE"};
     return 0;
 }

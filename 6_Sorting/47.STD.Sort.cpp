@@ -8,14 +8,10 @@ int main()
     std::cout << std::begin(array) << " " << std::end(array) << "\n";
 	std::sort(std::begin(array), std::end(array));
 
-	for (int i{ 0 }; i < static_cast<int>(std::size(array)); ++i)
-		std::cout << array[i] << ' ';
+	for (int i{ 0 }; i < static_cast<int>(std::size(array)); ++i) std::cout << array[i] << ' ';
     
 	std::cout << '\n';
-    for(int i : array)
-    {
-        std::cout << i << " "; 
-    }
+    for(int i : array) std::cout << i << " "; 
 
 	std::cout << '\n';
 

@@ -31,8 +31,8 @@ public:
     const T& operator()(int row, int col) const { return m_arr.get()[static_cast<std::size_t>(row * cols() + col)]; }
 
     // in C++23, you can uncomment these since multidimensional operator[] is supported
-//    T& operator[](int row, int col) { return m_arr.get()[static_cast<std::size_t>(row * cols() + col)]; }
-//    const T& operator[](int row, int col) const { return m_arr.get()[static_cast<std::size_t>(row * cols() + col)]; }
+    // T& operator[](int row, int col) { return m_arr.get()[static_cast<std::size_t>(row * cols() + col)]; }
+    // const T& operator[](int row, int col) const { return m_arr.get()[static_cast<std::size_t>(row * cols() + col)]; }
 
     int rows() const { return static_cast<int>(Row); }
     int cols() const { return static_cast<int>(Col); }

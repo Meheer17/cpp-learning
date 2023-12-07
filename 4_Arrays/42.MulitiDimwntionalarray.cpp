@@ -2,8 +2,8 @@
 
 int main()
 {
-    constexpr int numRows{ 10 };
-    constexpr int numCols{ 10 };
+    constexpr int numRows{ 21 };
+    constexpr int numCols{ 21 };
 
     // Declare a 10x10 array
     int product[numRows][numCols]{};

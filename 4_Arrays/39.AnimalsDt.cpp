@@ -82,7 +82,6 @@ int main()
     else
         printAnimalData(type);
 
-
     std::cout << "\nHere is the data for the rest of the animals:\n";
     for (auto a : Animal::types)
     {

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string_view> // For the views reverse function
 
 void printArray(const int* begin, const int* end)
 {
@@ -51,7 +52,7 @@ int main()
 
     {
         int arr[] {1,2,3,4,5};
-    	for (auto e : arr)         // iterate from `begin` up to (but excluding) `end`
+    	for (auto e : std::views::reverse(arr))         // iterate from `begin` up to (but excluding) `end`
 	    {
 	    	std::cout << e << ' '; // dereference our loop variable to get the current element
     	}
